@@ -14,18 +14,26 @@
           "id": "2",
           "numbersType": "Home",
           "numberDigits": "0671112111"
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "firstname": "Kledjon",
-      "lastname": "Alushani",
-      "numbers": [
+        },
         {
-          "id": "2",
-          "numbersType": "Cellphone",
-          "numberDigits": "0671112111"
+          "id": "4e292d0b-982e-86c8-dcfb-8663f5ed7e41",
+          "numbersType": "Home",
+          "numberDigits": "12312312"
+        },
+        {
+          "id": "fcda76ce-bcb7-b32e-045c-54cd36eadc95",
+          "numbersType": "Home",
+          "numberDigits": "123123123"
+        },
+        {
+          "id": "417037f9-f3c8-89e2-b7dc-17e670f3798c",
+          "numbersType": "Home",
+          "numberDigits": "3333333333333333"
+        },
+        {
+          "id": "37fa5e2b-1515-eaee-c703-4aae52ca1122",
+          "numbersType": "Home",
+          "numberDigits": "777777777777"
         }
       ]
     },
@@ -73,6 +81,16 @@
           "id": "1",
           "numbersType": "Work",
           "numberDigits": "1234567980"
+        },
+        {
+          "id": "dfa6a544-7398-92ee-dc9a-ea2453e8428d",
+          "numbersType": "Home",
+          "numberDigits": "65544545+"
+        },
+        {
+          "id": "1a0e6270-133d-2db2-ef2e-8b913dad2ae3",
+          "numbersType": "Work",
+          "numberDigits": "65544545+"
         }
       ],
       "id": "2eaIriM"
@@ -90,21 +108,62 @@
       "id": "3w6h8yE"
     },
     {
-      "firstname": "Sindi",
-      "lastname": "Vrapi",
+      "firstname": "kled",
+      "lastname": "aasd",
       "numbers": [
         {
-          "id": "ca24aa43-15bd-aa8a-9fbf-0ae3f48a417b",
-          "numbersType": "Home",
-          "numberDigits": "1234567980"
+          "id": "561deb63-d341-314a-53df-f8c934bb5c81",
+          "numbersType": "Work",
+          "numberDigits": "asdasd123123"
         },
         {
-          "id": "37e10e8a-ff8d-fef1-b7c6-7fc5519fde07",
-          "numbersType": "Home",
-          "numberDigits": "1234567980"
+          "id": "73258bbb-ab1e-6401-9d16-ef2fbdfd8044",
+          "numbersType": "Work",
+          "numberDigits": "asdasd123123"
+        },
+        {
+          "id": "c75dab0f-9985-7068-b5be-98b482e3a9a5",
+          "numbersType": "Cellphone",
+          "numberDigits": "asdasd123123"
         }
       ],
-      "id": "T2UnkR6"
+      "id": "68gqrXT"
+    },
+    {
+      "firstname": "sdasd",
+      "lastname": "asdsad",
+      "numbers": [
+        {
+          "id": "d001e26d-4c96-b802-4d81-d8cdbac789dc",
+          "numbersType": "Home",
+          "numberDigits": "asd"
+        }
+      ],
+      "id": "lXYnkbd"
+    },
+    {
+      "firstname": "asd",
+      "lastname": "assadasd",
+      "numbers": [
+        {
+          "id": "834adb39-8d69-3e92-d64f-34d5bc62234e",
+          "numbersType": "Work",
+          "numberDigits": "234324"
+        }
+      ],
+      "id": "JHqXSqL"
+    },
+    {
+      "firstname": "xzxcxzc",
+      "lastname": "zxczx",
+      "numbers": [
+        {
+          "id": "e839703e-fa27-f4cb-e219-6dbb326b1bd4",
+          "numbersType": "Home",
+          "numberDigits": "qqwewqe34"
+        }
+      ],
+      "id": "-yXTSNp"
     }
   ],
   "nrTypes": [

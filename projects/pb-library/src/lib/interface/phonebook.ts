@@ -10,9 +10,9 @@ export interface NrType {
 
 export interface User {
   id?: string;
-  firstname: string;
-  lastname: string;
-  numbers: Number[];
+  firstname?: string;
+  lastname?: string;
+  numbers?: Number[];
 }
 
 export interface Number {
