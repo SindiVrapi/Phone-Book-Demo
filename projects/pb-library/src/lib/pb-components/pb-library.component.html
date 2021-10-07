@@ -1,0 +1,117 @@
+<br>
+<div class="global-wrapper" ng-app="myApp">
+
+    <div class="container">
+      <div class="row panel panel-primary">
+        <div class="panel-heading">
+          <h2 class="panel-title">Angular Contact List App</h2>
+        </div>
+
+        <!--     contact list   	 -->
+        <div class="col-xs-5 panel-body">
+          <ul class="list-group userList">
+            <div class = "d-flex justify-content-between align-items-center">
+              <h4>Contacts:</h4>
+              <button class="btn btn-default" (click)="addContact()">
+                  <span class="glyphicon glyphicon-ok"></span><span>  Add Contact</span>
+              </button>
+            </div>
+            <li class="list-group-item list-header d-flex justify-content-between">
+              <span>
+                <label> Sort By :  </label>
+              </span>
+              <span>
+                <select class="form-control" (change)="onChange($event)">
+                  <option value="firstname">Firstname</option>
+                  <option value="lastname">Lastname</option>
+                </select>
+              </span>
+            </li>
+            <li class="list-group-item list-content d-flex justify-content-between" *ngFor="let contact of userList" (click)="viewContact(contact)">
+                <span>{{contact.firstname}}</span>
+                <span>{{contact.lastname}}</span>
+            </li>
+          </ul>
+        </div>
+
+        <!--   ng-view below       -->
+        <div class="col-xs-7">
+          <div class="list-group panel-body" *ngIf = "!currentUser && !editcontact && !addcontact">   <!--   ng-if nese klikohet 1 el       -->
+            <div class="list-group-item text-center">Please select a contact to view</div>
+          </div>
+          <div class="list-group-item" *ngIf = "currentUser && !editcontact && !addcontact">
+            <h3 class="text-center">{{currentUser.firstname}} {{currentUser.lastname}}</h3>
+            <div class = "list-content d-flex user-view" *ngFor="let number of currentUser.numbers; let i = index">
+                <p>Number {{i+1}} : {{number.numberDigits}}</p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>Number Type : {{number.numbersType}}</p>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </div>
+
+            <div class="list-content d-flex justify-content-between">
+              <button *ngIf = "currentUser && !editcontact && !addcontact" class="btn btn-default" (click)="editContact()">
+              <span class="glyphicon glyphicon-pencil"></span><span> - Edit</span>
+              </button>
+              <button *ngIf = "currentUser && !editcontact && !addcontact" class="btn btn-default" (click)="removeContact(currentUser)">
+                <span class="glyphicon glyphicon-remove"></span><span> - Remove</span>
+              </button>
+            </div>
+          </div>
+
+          <div *ngIf = "editcontact || addcontact">
+            <div class="list-group-item">
+
+              <div class="form-group">
+
+                <p><label for="name">First name: </label> <input id="name" class="form-control" type="text" [(ngModel)]="currentUser.firstname"> </p>
+                <p><label for="name">Last name: </label> <input id="name" class="form-control" type="text" [(ngModel)]="currentUser.lastname"> </p>
+                <div>
+                    <div class="list-content d-flex justify-content-between" *ngFor="let number of currentUser.numbers">
+                        <p>
+                          <label for="phone">Number Type :  </label>
+                          <select  id="phone" class="form-control" [(ngModel)]="number.numbersType">
+                            <option *ngFor="let nrType of nrTypes" [value]="nrType.numbersType">{{nrType.numbersType}}</option>
+                          </select>
+                        </p>
+                        <p><label for="phone">Number :</label> <input id="phone" class="form-control" type="text" [(ngModel)]="number.numberDigits"> </p>
+                        <button class="btn btn-default remove-btn" (click)="removePhoneNumberForUser(currentUser, number)">
+                          <span class="glyphicon glyphicon-remove"></span><span> - Remove Number</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="list-content d-flex justify-content-between">
+                    <p>
+                      <label for="phone">Number Type :</label>
+                      <select class="form-control" id="phone" class="form-control" #numberType>
+                        <option *ngFor="let nrType of nrTypes" [value]="nrType.numbersType">{{nrType.numbersType}}</option>
+                      </select>
+                    </p>
+                    <p><label for="phone">Number :</label> <input id="phone" class="form-control" type="text" #number> </p>
+                    <button class="btn btn-default add-btn" (click)="addPhoneNumberForUser(numberType.value, number.value)">
+                        <span class="glyphicon glyphicon-ok"></span><span> Add New Numbers</span>
+                    </button>
+                </div>
+              </div>
+
+              <div class="list-content d-flex justify-content-between">
+                <button *ngIf = "editcontact" class="btn btn-default" (click)="saveEdits(currentUser)">
+                    <span class="glyphicon glyphicon-ok"></span>
+                    <span> Save Edits</span>
+                </button>
+                <button *ngIf = "addcontact" class="btn btn-default" (click)="saveAddedUser(currentUser)">
+                    <span class="glyphicon glyphicon-ok"></span>
+                    <span> Add</span>
+                </button>
+                <button class="btn btn-default" (click)="cancel(currentUser)">
+                    <span class="glyphicon glyphicon-remove"></span><span>  Cancel</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>

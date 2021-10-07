@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstname": "Kledjon",
+      "lastname": "Alushani",
+      "numbers": [
+        {
+          "id": "1",
+          "numbersType": "Work",
+          "numberDigits": "0671112111"
+        },
+        {
+          "id": "2",
+          "numbersType": "Home",
+          "numberDigits": "0671112111"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "firstname": "Kledjon",
+      "lastname": "Alushani",
+      "numbers": [
+        {
+          "id": "2",
+          "numbersType": "Cellphone",
+          "numberDigits": "0671112111"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "firstname": "Sindi",
+      "lastname": "Test",
+      "numbers": [
+        {
+          "id": "7f7b31eb-6433-ac55-05ba-0dff706eb724",
+          "numbersType": "Home",
+          "numberDigits": "0671112112"
+        }
+      ]
+    },
+    {
+      "firstname": "Sindi",
+      "lastname": "Vrapi",
+      "numbers": [
+        {
+          "id": "1",
+          "numbersType": "Home",
+          "numberDigits": "1234567980"
+        }
+      ],
+      "id": "-_HKbcm"
+    },
+    {
+      "firstname": "Sindi",
+      "lastname": "Vrapi",
+      "numbers": [
+        {
+          "id": "1",
+          "numbersType": "Home",
+          "numberDigits": "1234567980"
+        }
+      ],
+      "id": "HSPGjq3"
+    },
+    {
+      "firstname": "English",
+      "lastname": "English",
+      "numbers": [
+        {
+          "id": "1",
+          "numbersType": "Work",
+          "numberDigits": "1234567980"
+        }
+      ],
+      "id": "2eaIriM"
+    },
+    {
+      "firstname": "Test Sindi",
+      "lastname": "Test Sindi",
+      "numbers": [
+        {
+          "id": "1",
+          "numbersType": "Home",
+          "numberDigits": "12345678"
+        }
+      ],
+      "id": "3w6h8yE"
+    },
+    {
+      "firstname": "Sindi",
+      "lastname": "Vrapi",
+      "numbers": [
+        {
+          "id": "ca24aa43-15bd-aa8a-9fbf-0ae3f48a417b",
+          "numbersType": "Home",
+          "numberDigits": "1234567980"
+        },
+        {
+          "id": "37e10e8a-ff8d-fef1-b7c6-7fc5519fde07",
+          "numbersType": "Home",
+          "numberDigits": "1234567980"
+        }
+      ],
+      "id": "T2UnkR6"
+    }
+  ],
+  "nrTypes": [
+    {
+      "id": "1",
+      "numbersType": "Home"
+    },
+    {
+      "id": "2",
+      "numbersType": "Work"
+    },
+    {
+      "id": "3",
+      "numbersType": "Cellphone"
+    }
+  ]
+}

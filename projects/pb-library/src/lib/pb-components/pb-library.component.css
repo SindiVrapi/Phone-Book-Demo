@@ -1,0 +1,53 @@
+.row{
+    display: block;
+}
+.list-group-item{
+    border: 1px solid #ddd;
+}
+.userList .list-group-item:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #117a8b;
+}
+.panel-primary {
+  border-color: #117a8b;
+}
+.align-items-center{
+  margin-bottom: 15px;
+}
+.list-header span{
+  margin: auto;
+  background-color: #117a8b;
+  color: white;
+  font-size: 14px;
+}
+.list-header{
+  background-color: #117a8b;
+  color: white;
+}
+.list-header:hover{
+  background-color: #117a8b !important;
+  cursor: unset !important;
+}
+.panel-title{
+  margin: 0;
+}
+.list-content span{
+  margin: auto;
+}
+.text-center{
+  color: #117a8b;
+  font-size: 16px;
+}
+.col-xs-7{
+  margin-top: 6.2%;
+  padding-bottom: 15px;
+}
+.remove-btn, .add-btn{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
