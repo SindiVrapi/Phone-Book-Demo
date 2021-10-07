@@ -26,14 +26,9 @@
           "numberDigits": "123123123"
         },
         {
-          "id": "417037f9-f3c8-89e2-b7dc-17e670f3798c",
+          "id": "55c97fca-e6d2-0276-e825-89738d54607b",
           "numbersType": "Home",
-          "numberDigits": "3333333333333333"
-        },
-        {
-          "id": "37fa5e2b-1515-eaee-c703-4aae52ca1122",
-          "numbersType": "Home",
-          "numberDigits": "777777777777"
+          "numberDigits": "0673222586"
         }
       ]
     },
@@ -108,8 +103,8 @@
       "id": "3w6h8yE"
     },
     {
-      "firstname": "kled",
-      "lastname": "aasd",
+      "firstname": "Sindi",
+      "lastname": "Vrapi",
       "numbers": [
         {
           "id": "561deb63-d341-314a-53df-f8c934bb5c81",
@@ -164,6 +159,18 @@
         }
       ],
       "id": "-yXTSNp"
+    },
+    {
+      "firstname": "BACHELOR'S DEGREE IN ",
+      "lastname": "INFORMATICS ENGINEERING ",
+      "numbers": [
+        {
+          "id": "72d479c8-d218-5bfe-b585-89e6aa3a2dbe",
+          "numbersType": "Home",
+          "numberDigits": "1234567980"
+        }
+      ],
+      "id": "5TAgyAk"
     }
   ],
   "nrTypes": [

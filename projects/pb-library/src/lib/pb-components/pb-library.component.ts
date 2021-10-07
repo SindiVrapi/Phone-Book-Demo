@@ -55,13 +55,16 @@ export class PbLibraryComponent implements OnInit {
     this.addcontact = false;
   }
   public addPhoneNumberForUser(numberType: any, number: any) {
-    let id = Guid.raw(); //create an id as a string
-    var object = {
-      id: Guid.raw(),
-      numbersType: numberType,
-      numberDigits: number,
-    };
-    this.currentUser.numbers.push(object);
+    if(numberType == '' || number ==''){
+      alert('Please fill the number details');
+    }else{
+      var object = {
+        id: Guid.raw(),
+        numbersType: numberType,
+        numberDigits: number,
+      };
+      this.currentUser.numbers.push(object);
+    }
   }
 
   public saveEdits(contact: any) {
